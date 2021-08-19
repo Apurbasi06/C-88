@@ -11,7 +11,7 @@
 
      function player_update()
      {
-         fabric.block_image_objects.fromURL("player.png", function(Img)
+         fabric.Image.fromURL("player.png", function(Img)
          {
              player_object = Img;
 
@@ -172,7 +172,7 @@
       {
           player_y = player_y + block_image_height;
           console.log("block image height = " + block_image_height);
-          console.log("When Down arrow key pressed, X = " + player_x +" , Y = " +player_y);
+          console.log("When Down arrow key pressed, X = "+ player_x +" , Y = "+player_y);
           canvas.remove(player_object);
           player_update();
 
@@ -188,7 +188,7 @@
 
         player_x = player_x - block_image_width;
         console.log("block image width = " + block_image_width);
-        console.log("When Left aroow key pressed, X = " + player_x + ", Y = " + player_y);
+        console.log("When Left aroow key pressed, X = "+ player_x + ", Y = "+player_y);
         canvas.remove(player_object);
         player_update();
 
